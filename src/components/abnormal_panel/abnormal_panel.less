@@ -1,0 +1,96 @@
+.panel-container-page {
+    height: 100%;
+    .header {
+        height: 30px;
+        background: #B37B6B;
+        line-height: 30px;
+        padding-left: 10px;
+        font-family: PingFangSC-Light;
+        font-size: 14px;
+        color: #FFFFFF;
+        position: relative;
+        .close-abnormal-panel {
+            position: absolute;
+            right: 10px;
+            top: 8px;
+        }
+        .close-abnormal-panel:hover {
+            color: #000;
+        }
+    }
+    .panel-container-page-content {
+        height: calc(~'100% - 80px');
+        .select {
+            height: 30;
+            padding: 0 10px;
+            text-align: left;
+            margin-top: 10px;
+            line-height: 30px;
+        }
+        .month-error-list {
+            height: calc(~'100% - 30px');
+            padding: 0;
+            overflow: auto;
+            &::-webkit-scrollbar {
+                width: 4px;
+                height: 4px;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 2.5px;
+                background: #D8D8D8;
+            }
+            .month-item {
+                padding: 0 10px 10px;
+                text-align: left;
+                .month-title {
+                    height: 40px;
+                    line-height: 40px;
+                    border-bottom: 1px solid #CCCCCC;
+                    font-family: PingFangSC-Regular;
+                    font-size: 12px;
+                    color: #666666;
+                }
+                .month-day {
+                    margin: 0;
+                    display: flex;
+                    padding: 5px 0;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    li {
+                        height: 30px;
+                        width: 30px;
+                        text-align: center;
+                        line-height: 30px;
+                        margin-right: 5px;
+                        margin-bottom: 5px;
+                        border-radius: 2px;
+                        border: 1px solid #dcdcdc;
+                        &.date-selected {
+                            background: #999999;
+                            color: #fff
+                        }
+                    }
+                    li:hover {
+                        background: #999999;
+                        color: #fff
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        height: 40px;
+        padding-left: 10px;
+        line-height: 40px;
+        position: relative;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        color: #666666;
+        border-top: 1px solid #dcdcdc;
+        .positioning {
+            position: absolute;
+            right: 10px;
+            top: 8px;
+        }
+    }
+}

@@ -1,0 +1,210 @@
+.meter-info-revision-page {
+    height: 100%;
+    width: 100%;
+    background: #F5F7FA;
+    overflow: hidden;
+    .table-page {
+        width: 100%;
+        height: 100%;
+        padding: 0 calc(~'7% + 8px');
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 2.5px;
+            background: rgba(166, 166, 166, .4);
+        }
+        .table-breadcrumb {
+            height: 40px;
+            .ant-breadcrumb {
+                font-size: 12px;
+                line-height: 40px;
+            }
+        }
+        .title {
+            font-family: MicrosoftYaHei;
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #666666;
+        }
+        .content {
+            height: auto;
+            width: 100%;
+            padding: 20px;
+            background: #FFF;
+            box-shadow: 0 2px 4px 0 rgba(128, 128, 128, 0.20);
+            margin-bottom: 20px;
+            .search {
+                height: 32px;
+                position: relative;
+                margin-bottom: 20px;
+                .ant-btn {
+                    padding: 0 8px;
+                    background: #1B5EC1
+                }
+                .search-group {
+                    width: 310px
+                }
+                .search-export {
+                    color: #fff;
+                    position: absolute;
+                    right: 18px;
+                    top: 0;
+                }
+                .search-result-show {
+                    position: absolute;
+                    top: 32px;
+                    left: 93px;
+                    width: 600px;
+                    height: 300px;
+                    background: #fff;
+                    padding: 10px;
+                    z-index: 15;
+                    box-shadow: 1px 4px 4px 2px rgba(128, 128, 128, 0.2);
+                }
+            }
+            .meter-info-table {
+                height: 80px;
+                margin-bottom: 35px;
+                overflow: hidden;
+                border: 1px solid #EBEDF0;
+                li {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    height: 40px;
+                    span {
+                        width: calc(~'100%/3');
+                        text-align: left;
+                        padding: 2px 5px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        text-align: center
+                    }
+                }
+                .meter-info-table-header {
+                    height: 40px;
+                    background: #e8e8e8;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    line-height: 40px;
+                    cursor: default;
+                    span {
+                        width: calc(~'100%/5');
+                        text-align: center
+                    }
+                }
+                .meter-info-table-footer {
+                    height: 40px;
+                    width: 100%;
+                    background: #fff;
+                    text-align: center;
+                    line-height: 40px;
+                    cursor: default;
+                    p {
+                        width: 100%;
+                        padding: 20px 0 0;
+                        font-size: 14px;
+                        color: rgba(0, 0, 0, 0.45);
+                        text-align: center
+                    }
+                }
+            }
+            .meter-details {
+                margin-bottom: 35px;
+                .meter-details-title {
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #666666;
+                    margin-bottom: 10px;
+                    i {
+                        color: #1B5EC1;
+                        margin-right: 10px;
+                    }
+                }
+                .meter-details-content {
+                    .meter-details-row-wrap {
+                        height: 52px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        line-height: 32px;
+                        padding: 10px 0;
+                        .meter-label-col {
+                            text-align: right;
+                            width: 120px;
+                            line-height: 32px;
+                            padding-right: 10px;
+                            font-family: MicrosoftYaHei;
+                            font-size: 14px;
+                            color: #999999;
+                        }
+                        .meter-wrapper-col {
+                            padding-left: 10px;
+                            flex: 1;
+                            .customer-attrib-btn {
+                                width: 240px;
+                                height: 32px;
+                                border: 1px solid #d9d9d9;
+                                cursor: pointer;
+                                position: relative;
+                                padding-left: 12px;
+                                i {
+                                    position: absolute;
+                                    right: 10px;
+                                    color: #d9d9d9;
+                                    margin-right: 0;
+                                }
+                                .placeholder {
+                                    color: #b3b3b3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .customer-details {
+                margin-bottom: 35px;
+                .customer-details-title {
+                    font-family: MicrosoftYaHei;
+                    font-size: 14px;
+                    color: #666666;
+                    margin-bottom: 10px;
+                    i {
+                        color: #1B5EC1;
+                        margin-right: 10px;
+                    }
+                }
+                .customer-details-content {
+                    .customer-details-row-wrap {
+                        height: 52px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        padding: 10px 0;
+                        .meter-label-col {
+                            text-align: right;
+                            width: 120px;
+                            line-height: 32px;
+                            padding-right: 10px;
+                            font-family: MicrosoftYaHei;
+                            font-size: 14px;
+                            color: #999999;
+                        }
+                        .meter-wrapper-col {
+                            padding-left: 10px;
+                            flex: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ant-table-placeholder {
+    padding: 10px 16px!important
+}

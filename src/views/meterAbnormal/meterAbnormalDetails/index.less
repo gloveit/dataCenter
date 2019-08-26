@@ -1,0 +1,133 @@
+.tab-unnormal-details {
+    height: 100%;
+    width: 100%;
+    background: #F5F7FA;
+    overflow: hidden;
+    .details-page {
+        width: 100%;
+        height: 100%;
+        padding: 0 calc(~'7%');
+        .datails-breadcrumb {
+            height: 40px;
+            line-height: 40px;
+            .ant-breadcrumb {
+                line-height: 40px;
+                font-size: 12px;
+            }
+        }
+        .content {
+            height: calc(~'100% - 60px');
+            width: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            .operation-navigation {
+                height: 40px;
+                display: flex;
+                margin-bottom: 15px;
+                justify-content: flex-start;
+                position: relative;
+                .custom-time-picker {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    .ant-input {
+                        border-radius: 2px!important;
+                    }
+                }
+                .time-range {
+                    margin-left: 10px;
+                    width: 250px;
+                }
+                .abnormal-panel {
+                    position: relative;
+                    height: 32px;
+                    line-height: 30px;
+                    text-align: center;
+                    font-family: PingFangSC-Light;
+                    font-size: 14px;
+                    color: #FA6E45;
+                    width: 96px;
+                    background: #FFFFFF;
+                    border: 1px solid #FA6E45;
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                    border-radius: 2px;
+                    i {
+                        font-size: 13px;
+                    }
+                    .text-abnormal {
+                        font-size: 14px;
+                        line-height: 16px;
+                        margin-left: 4px;
+                    }
+                    .panel-container {
+                        position: absolute;
+                        left: 0;
+                        top: 30px;
+                        height: 270px;
+                        width: 258px;
+                        cursor: pointer;
+                        background: #fff;
+                        z-index: 1;
+                        box-shadow: 0 1px 4px 0 rgba(41, 46, 51, 0.30);
+                        border-radius: 3px;
+                    }
+                }
+            }
+            .left-panel {
+                flex: 1;
+                height: 100%;
+                box-shadow: 0 2px 4px 0 rgba(128, 128, 128, 0.20);
+                padding: 20px 0 20px 20px;
+                background: #FFFFFF;
+                .chart-type-switch-box {
+                    margin-bottom: 10px;
+                }
+                .chart-type-switch {
+                    width: 409px;
+                    height: 34px;
+                    display: flex;
+                    justify-content: flex-start;
+                    border-top: 1px solid #A3B4CC;
+                    border-bottom: 1px solid #A3B4CC;
+                    border-left: 1px solid #A3B4CC;
+                    border-radius: 2px;
+                    li {
+                        width: 102px;
+                        border-right: 1px solid #A3B4CC;
+                        text-align: center;
+                        line-height: 32px;
+                        cursor: pointer;
+                        &.chart-selected-active {
+                            font-family: MicrosoftYaHei;
+                            font-size: 13px;
+                            color: #FFFFFF;
+                            text-align: center;
+                            background: #A3B4CC
+                        }
+                    }
+                }
+                .echart-box {
+                    width: 100%;
+                    height: calc(~"100% - 55px - 44px");
+                }
+            }
+            .right-panel {
+                width: 320px;
+                background: #FFFFFF;
+                padding: 20px;
+                margin-left: 20px;
+                box-shadow: 0 2px 4px 0 rgba(128, 128, 128, 0.20);
+                overflow: auto;
+                &::-webkit-scrollbar {
+                    width: 7px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 2.5px;
+                    background: rgba(166, 166, 166, .4);
+                }
+            }
+        }
+    }
+}

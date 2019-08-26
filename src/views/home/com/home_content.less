@@ -1,0 +1,184 @@
+.home-container {
+    height: 100%;
+    .navigation {
+        height: 30px;
+        width: 86%;
+        margin: 0 auto;
+        max-width: 1920px;
+        border-bottom: 2px solid #a2c9ff;
+        .nav-menu {
+            height: 30px;
+            width: 100%;
+            margin-bottom: -2px;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            li {
+                height: 100%;
+                line-height: 30px;
+                margin-right: 20px;
+                padding: 0 3px 0 0;
+                color: #cce1ff;
+                cursor: pointer;
+                a {
+                    color: #cce1ff;
+                    font-size: 14px;
+                }
+                &.activeItmeNav {
+                    border-bottom: 2px solid #fff;
+                    color: #fff;
+                    a {
+                        color: #fff;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        height: calc(~"100% - 45px");
+        padding: 0 6px;
+        margin-top: 20px;
+        .container-box {
+            height: 100%;
+            overflow: auto;
+            width: 100%;
+            &::-webkit-scrollbar {
+                width: 4px;
+                height: 4px;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 2.5px;
+                background: rgba(216, 216, 216, 0.3);
+            }
+            .container-item {
+                width: calc(~'86% + 6px');
+                margin: 0 auto;
+                margin-bottom: 10px;
+                &.edit-mode {
+                    border: 1px dashed #979797;
+                    background: rgba(0, 0, 0, 0.50);
+                    width: calc(~'86% + 46px');
+                    padding: 0 20px;
+                }
+                .item-tip {
+                    height: 20px;
+                    line-height: 20px;
+                    margin-bottom: 16px;
+                    font-size: 14px;
+                    display: block;
+                    visibility: middle;
+                    color: #fff;
+                    i {
+                        font-size: 14px;
+                        margin-right: 2px;
+                        &.collection {
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .item-tip:nth-of-type(1) {
+                    margin-top: 10px;
+                }
+                .item-content {
+                    .tiles-router {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 0;
+                        margin: 0;
+                        .li-item-tiles {
+                            margin-right: 20px;
+                            margin-bottom: 20px;
+                            cursor: pointer;
+                            position: relative;
+                            .favorites-btn {
+                                position: absolute;
+                                right: 20px;
+                                top: 20px;
+                                display: none;
+                                width: 20px;
+                                height: 20px;
+                                background: #D9D9D9;
+                                z-index: 1;
+                                text-align: center;
+                                line-height: 18px;
+                                border-radius: 2px;
+                                i {
+                                    font-size: 12px;
+                                    color: #999999
+                                }
+                                &.hasFavorites {
+                                    i {
+                                        font-size: 12px;
+                                        color: #F7B500
+                                    }
+                                }
+                            }
+                        }
+                        .li-item-tiles:hover {
+                            .favorites-btn {
+                                display: block
+                            }
+                        }
+                        .empty-favorites-item {
+                            width: 302px;
+                            height: 32px;
+                            background: rgba(255, 255, 255, 0.2);
+                            border-radius: 2px;
+                            text-align: left;
+                            line-height: 32px;
+                            padding-left: 20px;
+                            font-size: 12px;
+                            margin-bottom: 20px;
+                            font-family: PingFangSC-Regular;
+                            font-weight: 400;
+                            color: rgba(207, 216, 230, 1);
+                            i {
+                                font-size: 12px;
+                                margin-right: 6px;
+                            }
+                        }
+                        @-webkit-keyframes shaky-slow {
+                            0% {
+                                -webkit-transform: translate(0px, 0px) rotate(0deg);
+                            }
+                            98% {
+                                -webkit-transform: translate(1.3px, 1px) rotate(-0.5deg);
+                            }
+                        }
+                        @keyframes shaky-slow {
+                            0% {
+                                -webkit-transform: translate(0px, 0px) rotate(0deg);
+                            }
+                            98% {
+                                -webkit-transform: translate(1.3px, 1px) rotate(-0.5deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#right_context_menu {
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(128, 128, 128, 0.20);
+    position: fixed;
+    z-index: 999;
+    ul {
+        height: auto;
+        list-style: none;
+        margin: 0;
+        li {
+            cursor: pointer;
+            text-align: left;
+            line-height: 20px;
+            &:hover {
+                color: #fff;
+                background: #dcdcdc
+            }
+        }
+    }
+}

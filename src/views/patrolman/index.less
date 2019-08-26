@@ -1,0 +1,529 @@
+.patrolman-index-wrap {
+	width : 100%;
+	height: 100%;
+
+	// background: #0f0
+	.amap-wrapper {
+		width      : 100%;
+		height     : 100%;
+		// position: relative;
+	}
+
+	.patrolman-index-wrap-amap-meterList {
+		width              : 425px;
+		height             : 600px;
+		// background-color: #000000;
+		border-radius      : 10px;
+		border             : solid 0.5px #0078ff;
+		position           : absolute;
+		margin-left        : 31px;
+		top                : 50%;
+		margin-top         : -309px;
+		z-index            : 4;
+		// opacity         : 0.3;
+		background         : url("../../assets/img/bgl@2x.png");
+		background-size    : 100% 100%;
+		display            : flex;
+		flex-flow          : column;
+
+		.patrolman-index-wrap-amap-meterList-title {
+			margin: 16px 0 0 0px;
+			width : 100%;
+			height: 70px;
+
+			& span {
+				display    : block;
+				float      : left;
+				width      : 46px;
+				height     : 47px;
+				color      : #3acaff;
+				font-size  : 38px;
+				margin-left: 32px;
+			}
+
+			.patrolman-index-wrap-amap-meterList-title-descrip {
+				width : 120px;
+				height: 47px;
+				float : left;
+				margin: 8px 0 0 10px;
+
+				.patrolman-index-wrap-amap-meterList-title-descrip-chinese {
+					display       : inline-block;
+					width         : 130px;
+					height        : 20px;
+					font-family   : "PingFangSC-Regular";
+					font-size     : 16px;
+					font-weight   : normal;
+					font-stretch  : normal;
+					letter-spacing: 0px;
+					color         : #3bbeff;
+					margin-left   : 0px;
+				}
+
+				.patrolman-index-wrap-amap-meterList-title-descrip-english {
+					display       : inline-block;
+					width         : 130px;
+					height        : 20px;
+					font-family   : "PingFangSC-Regular";
+					font-size     : 12px;
+					font-weight   : normal;
+					font-stretch  : normal;
+					line-height   : 25.3px;
+					letter-spacing: 0px;
+					color         : #3bbeff;
+					margin-left   : 0px;
+				}
+
+			}
+		}
+
+		.patrolman-index-wrap-amap-meterList-title-account {
+			float : right;
+			margin: 12px 20px 0 0;
+
+			.patrolman-index-wrap-amap-meterList-title-account-number1 {
+				width         : 100px;
+				height        : 29px;
+				font-family   : PingFangSC-Medium;
+				font-size     : 36px;
+				font-weight   : normal;
+				font-stretch  : normal;
+				line-height   : 25.3px;
+				letter-spacing: 0px;
+				color         : #ffc61a;
+				text-align    : right;
+				margin-right  : 5px;
+			}
+
+			.patrolman-index-wrap-amap-meterList-title-account-slash {
+				float     : left;
+				width     : 1px;
+				height    : 30px;
+				background: #3bbeff;
+				transform : rotate(30deg)
+			}
+
+			.patrolman-index-wrap-amap-meterList-title-account-number2 {
+				font-family   : "PingFangSC-Regular";
+				font-size     : 22px;
+				font-weight   : normal;
+				letter-spacing: 0px;
+				color         : #3bbeff;
+				margin-left   : 5px;
+			}
+		}
+
+		.patrolman-index-wrap-amap-meterList-title-button {
+			// float       : none;
+			width          : 100%;
+			height         : 61px;
+			display        : flex;
+			justify-content: space-around;
+			align-items    : center;
+			font-size      : 14px;
+
+			.patrolman-index-wrap-amap-meterList-title-button-all {
+				width              : 90px;
+				height             : 32px;
+				// background-color: #3392ff;
+				background-color   : rgba(0, 0, 0, 0.2);
+				border-radius      : 4px;
+				border             : solid 1px #3392ff;
+				color              : #fff;
+				margin-left        : 20px;
+			}
+
+			.patrolman-index-wrap-amap-meterList-title-button-pressure {
+				width           : 124px;
+				height          : 32px;
+				border-radius   : 4px;
+				border          : solid 1px #ccebff;
+				color           : #fff;
+				background-color: rgba(0, 0, 0, 0.2);
+
+				&:hover {
+					background: #3392ff;
+				}
+			}
+
+			.patrolman-index-wrap-amap-meterList-title-button-temperature {
+				width           : 121px;
+				height          : 32px;
+				border-radius   : 4px;
+				border          : solid 1px #ccebff;
+				color           : #fff;
+				background-color: rgba(0, 0, 0, 0.2);
+
+				&:hover {
+					background: #3392ff;
+				}
+			}
+		}
+
+		.patrolman-index-wrap-amap-meterList-title-meterlist {
+			width  : 100%;
+			flex   : 1;
+			padding: 0 10px;
+
+			.patrolman-index-wrap-amap-meterList-title-meterlist-list {
+				list-style-type: none;
+				margin         : 0;
+				padding        : 0;
+
+				.patrolman-index-wrap-amap-meterList-title-meterlist-list-detail {
+					display    : flex;
+					align-items: center;
+
+					&:hover {
+						background-color: rgba(153, 214, 255, 0.6);
+						border-radius   : 4px;
+						border          : solid 1px #53baff;
+					}
+
+					// height: 70px;
+					.patrolman-index-wrap-amap-meterList-title-meterlist-list-eq {
+						display   : inline-block;
+						width     : 60px;
+						text-align: center;
+						font-size : 22px;
+						color     : #fff;
+						text-align: center;
+					}
+
+					.patrolman-index-wrap-amap-meterList-title-meterlist-list-wrap {
+						flex  : 1;
+						height: 70px;
+
+						& p {
+							color    : #fff;
+							font-size: 16px;
+							margin   : 10px 0;
+						}
+
+						.patrolman-index-wrap-amap-meterList-title-meterlist-list-wrap-button {
+							display         : inline-block;
+							width           : 78px;
+							height          : 22px;
+							background-color: #ff824e;
+							border-radius   : 11px;
+							color           : #fff;
+							font-size       : 14px;
+							text-align      : center;
+							margin-right    : 10px;
+						}
+					}
+				}
+
+			}
+
+			.patrolman-index-wrap-amap-meterList-title-meterlist-pagenumber {
+				width     : 100%;
+				text-align: center;
+
+				.patrolman-index-wrap-amap-meterList-title-meterlist-pagenumber-btprev {
+					font-size: 14px;
+					color    : #99d6ff;
+					cursor   : pointer;
+					display  : inline-block;
+					transform: rotate(180deg)
+				}
+
+				.patrolman-index-wrap-amap-meterList-title-meterlist-pagenumber-bt {
+					font-size: 14px;
+					color    : #99d6ff;
+					cursor   : pointer;
+				}
+
+				.patrolman-index-wrap-amap-meterList-title-meterlist-pagenumber-number {
+					font-size: 14px;
+					color    : #ccebff;
+					margin   : 0 5px;
+				}
+
+				.patrolman-index-wrap-amap-meterList-title-meterlist-pagenumber-pixe {
+					display   : inline-block;
+					width     : 1px;
+					height    : 20px;
+					background: #8fa4b3;
+					transform : rotate(20deg);
+					margin    : -5px 5px;
+				}
+			}
+		}
+	}
+
+	.patrolman-index-wrap-amap-meterDetail {
+		min-width             : 370px;
+		min-height            : 100%;
+		background-color      : rgba(24, 23, 23, 0.8);
+		border                : solid 0.5px #0078ff;
+		position              : absolute;
+		z-index               : 6;
+		top                   : 0;
+		// overflow           :auto;
+		// opacity            : 0.8;
+		margin-left           : -370px;
+		left                  : 100%;
+		box-shadow            : -3px 0px 10px 0px #0078ff;
+
+		.patrolman-index-wrap-amap-meterDetail-wrap {
+			padding       : 31px 35px;
+			display       : flex;
+			flex-direction: column;
+			height        : 100%;
+			// position   : relative;
+
+			// &::before {
+			// 	content      :"";
+			// 	width        : 0;
+			// 	height       : 0;
+			// 	border-top   : 10px solid transparent;
+			// 	border-right : 10px solid #000;
+			// 	border-bottom: 10px solid transparent;
+			// 	position     : absolute;
+			// 	top          :50%;
+			// 	margin-left  :-45px;
+			// }
+
+			.patrolman-index-wrap-amap-meterDetail-wrap-icon {
+				font-size: 16px;
+				color    : #3acaff;
+			}
+
+			.patrolman-index-wrap-amap-meterDetail-wrap-content {
+				font-size  : 18px;
+				color      : #3bbeff;
+				margin-left: 10px
+			}
+
+			.patrolman-index-wrap-amap-meterDetail-wrap-close {
+				text-decoration: none;
+				color          : #5c8199;
+				font-size      : 16px;
+				font-weight    : bold;
+				float          : right;
+			}
+
+			.patrolman-index-wrap-amap-meterDetail-wrap-business {
+				margin: 0px 0px;
+
+				& p {
+					font-size  : 16px;
+					color      : #fff;
+					height     : 20px;
+					line-height: 20px;
+					margin     : 5px 0;
+					overflow   : hidden;
+
+					& span {
+						margin-left: 10px;
+					}
+				}
+
+			}
+
+			.patrolman-index-wrap-amap-meterDetail-wrap-realtime {
+				width    : 100%;
+				flex     : 1;
+				// height: 100%;
+
+				.patrolman-index-wrap-amap-meterDetail-wrap-realtime-wrap {
+					margin          : 15px 0 5px 0;
+					width           : 100%;
+					height          : 150px;
+					background-color: #ffffff;
+					border-radius   : 4px;
+					border          : solid 1px #8ad0ff
+				}
+
+				& p {
+					margin   : 0x;
+					color    : #86a1b3;
+					font-size: 14px;
+
+					& span {
+						margin-left: 10px
+					}
+				}
+			}
+
+			.patrolman-index-wrap-amap-meterDetail-wrap-meterdetail {
+				width      : 100%;
+				// position: relative;
+				flex       : 2;
+
+				// & span {
+				// 	display         : inline-block;
+				// 	width           : 78px;
+				// 	height          : 24px;
+				// 	line-height     : 24px;
+				// 	background-color: #ff824e;
+				// 	border-radius   : 11px;
+				// 	color           : #fff;
+				// 	font-size       : 14px;
+				// 	text-align      : center;
+				// 	margin-right    : 10px;
+				// 	padding         : 0px;
+				// }
+
+				.patrolman-index-wrap-amap-meterDetail-wrap-meterdetail-linemessage {
+					margin: 5px 0;
+					color : #fff;
+
+					.patrolman-index-wrap-amap-meterDetail-wrap-meterdetail-linemessage-data {
+						margin: 10px;
+					}
+				}
+
+				.patrolman-index-wrap-amap-meterDetail-wrap-meterdetail-nexterror {
+					// float  : right;
+					width     : 100%;
+					text-align: right;
+					height    : 16px;
+
+					.patrolman-index-wrap-amap-meterDetail-wrap-meterdetail-nexterror-con {
+						font-size   : 14px;
+						color       : #ccebff;
+						margin-right: 5px;
+					}
+
+					.patrolman-index-wrap-amap-meterDetail-wrap-meterdetail-nexterror-icon {
+						font-size: 16px;
+						color    : #ccebff;
+					}
+				}
+
+				.patrolman-index-wrap-amap-meterDetail-wrap-meterdetail-warp {
+					width      : 100%;
+					margin-top : 30px;
+					// position: absolute;
+					// top     : 94%;
+
+					.patrolman-index-wrap-amap-meterDetail-wrap-meterdetail-wrap-question {
+						width        : 148px;
+						height       : 33px;
+						border-radius: 4px;
+						border       : solid 1px #ff824e;
+						color        : #ff824e;
+						font-size    : 14px;
+						background   : rgba(0, 0, 0, 0.2);
+						margin-right : 20px;
+						cursor       : pointer;
+					}
+
+					.patrolman-index-wrap-amap-meterDetail-wrap-meterdetail-wrap-ready {
+						width        : 120px;
+						height       : 33px;
+						border-radius: 4px;
+						border       : solid 1px #37b212;
+						color        : #37b312;
+						font-size    : 14px;
+						background   : rgba(0, 0, 0, 0.2);
+						cursor       : pointer;
+					}
+				}
+			}
+		}
+	}
+
+	.echarts-line {
+		width     : 100%;
+		height    : 100%;
+		position  : absolute;
+		top       : 0;
+		left      : 0;
+		z-index   : 10;
+		background: rgba(0, 0, 0, 0.8);
+
+		.echarts-line-close{
+			float: right;
+			margin: 50px 50px 0 0 ;
+			& span{
+				font-size: 30px;
+				color: #0090f0
+			}
+			& span:hover{
+				cursor: pointer;
+			}
+		}
+
+		.echarts-line-wrap {
+			width           : 740px;
+			height          : 439px;
+			background-color: rgba(0,0,0,0.6);
+			border          : solid 1px #3392ff;
+			float: right;
+			margin-right: 300px;
+			margin-top: 176px;
+		}
+	}
+}
+
+.patrolman-index-wrap-amap-meterDetail-wrap-commom-message {
+	color      : #8ad0ff;
+	display    : block;
+	height     : 30px;
+	line-height: 30px;
+}
+
+.patrolman-index-wrap-amap-meterDetail-wrap-common-line {
+	display   : block;
+	width     : 100%;
+	height    : 1px;
+	background: #8ad0ff;
+}
+
+.icon-line {
+	font-size: 16px;
+	color    : #0090f0;
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+.errorIcon {
+	display         : inline-block;
+	width           : 78px;
+	height          : 24px;
+	line-height     : 24px;
+	background-color: #ff824e;
+	border-radius   : 11px;
+	color           : #fff;
+	font-size       : 14px;
+	text-align      : center;
+	margin-right    : 10px;
+	padding         : 0px;
+}
+
+.active {
+	background: #3392ff !important;
+}
+
+.ops {
+	// width      : 370px!important;
+	// position   : absolute!important;
+	// left       : 100%;
+	// margin-left: -370px;
+	// z-index    : 4;
+	// height     : 100%!important;
+	// top        : 0px;
+	position      : absolute !important;
+	top           : 0px;
+	left          : 100%;
+	width         : 370px !important;
+	height        : 100%;
+	padding       : 0px;
+	margin-left   : -370px;
+	z-index       : 6;
+	;
+	// pointer-events: none;
+}
+
+// .__panel{
+// 	height: 100%!important;
+// 	position:static!important;
+// }
+// .__view{
+// 	height: 100% !important;
+// 	position:static !important;
+// }

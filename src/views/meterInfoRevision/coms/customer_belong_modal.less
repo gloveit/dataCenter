@@ -1,0 +1,206 @@
+.gc-modal-wrap .modal-content {
+    height: 400px;
+    border-bottom: 1px solid #dcdcdc;
+    overflow: hidden;
+    padding: 0 2px;
+    .search-input-top {
+        margin-bottom: 10px;
+        padding: 6px 18px 0;
+    }
+    .tips-for-user {
+        height: 37px;
+        line-height: 37px;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        color: #B3B3B3;
+        letter-spacing: 0.59px;
+        padding: 0 18px;
+        p {
+            span {
+                font-size: 14px;
+                color: red
+            }
+        }
+    }
+    .frist-enter-modal {
+        padding: 0 18px;
+        height: calc(~'100% - 42px');
+        .data-empty-icon {
+            text-align: center;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #8E9799;
+            letter-spacing: 0.69px;
+            i {
+                font-size: 150px;
+            }
+        }
+    }
+    .user-attribution {
+        padding: 0 18px;
+        height: calc(~'100% - 42px');
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 2.5px;
+            background: rgba(166, 166, 166, .4);
+        }
+        .ant-radio-group {
+            display: block;
+        }
+        .user-attribution-title {
+            width: 100%;
+            border-top: 1px solid #EBEDF0;
+            margin: 0;
+            &.user-attribution-title-active {
+                border-bottom: 1px solid #EBEDF0;
+            }
+            li {
+                border-left: 1px solid #EBEDF0;
+                border-right: 1px solid #EBEDF0;
+                height: 50px;
+                line-height: 50px;
+                padding-left: 20px;
+                position: relative;
+                &.title {
+                    height: 40px;
+                    background: #EBEDF0;
+                    line-height: 40px;
+                }
+                .add-newuser-checkbox {
+                    position: absolute;
+                    right: 20px;
+                    top: 0;
+                    .ant-radio-wrapper {
+                        margin-right: 0;
+                        .ant-radio .ant-radio-inner {
+                            border-radius: 1px;
+                            &:after {
+                                position: absolute;
+                                left: -3px;
+                                top: -2px;
+                                border-radius: 0;
+                                display: table;
+                                border-top: 0;
+                                border-left: 0;
+                                background: none;
+                                content: '\e822';
+                                color: #4DA1FF;
+                                font-size: 20px;
+                                font-family: 'iconfont'!important;
+                                font-style: normal;
+                                -webkit-font-smoothing: antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                                /* background-color: #999999; */
+                                opacity: 0;
+                                -webkit-transform: scale(0);
+                                transform: scale(0);
+                                -webkit-transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                                transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                            }
+                        }
+                        .ant-radio-checked .ant-radio-inner:after {
+                            -webkit-transform: scale(0.875);
+                            transform: scale(0.875);
+                            opacity: 1;
+                            -webkit-transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                            transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                        }
+                    }
+                }
+            }
+        }
+        .ant-collapse {
+            border-radius: 0px;
+            background-color: #fff;
+            border-left: 1px solid #EBEDF0;
+            border-right: 1px solid #EBEDF0;
+            &>.ant-collapse-item:last-child,
+            &>.ant-collapse-item:last-child>.ant-collapse-header {
+                border-radius: 0px;
+            }
+            &>.ant-collapse-item>.ant-collapse-header {
+                padding: 9px 0px 9px 40px;
+                .collapse-panel-content-header {
+                    position: relative;
+                    .header-checkbox {
+                        position: absolute;
+                        right: 20px;
+                        top: 0;
+                        .ant-radio-wrapper {
+                            margin-right: 0;
+                            .ant-radio .ant-radio-inner {
+                                border-radius: 1px;
+                                &:after {
+                                    position: absolute;
+                                    left: -3px;
+                                    top: -2px;
+                                    font-size: 20px;
+                                    color: #4DA1FF;
+                                    border-radius: 0;
+                                    display: table;
+                                    border-top: 0;
+                                    border-left: 0;
+                                    background: none;
+                                    content: '\e822';
+                                    font-family: 'iconfont'!important;
+                                    font-style: normal;
+                                    -webkit-font-smoothing: antialiased;
+                                    -moz-osx-font-smoothing: grayscale;
+                                    /* background-color: #999999; */
+                                    opacity: 0;
+                                    -webkit-transform: scale(0);
+                                    transform: scale(0);
+                                    -webkit-transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                                    transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                                }
+                            }
+                            .ant-radio-checked .ant-radio-inner:after {
+                                -webkit-transform: scale(0.875);
+                                transform: scale(0.875);
+                                opacity: 1;
+                                -webkit-transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                                transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+                            }
+                        }
+                    }
+                    .arrow-icon {
+                        position: absolute;
+                        top: 3px;
+                        left: -20px;
+                        height: 14px;
+                        width: 14px;
+                        font-size: 12px;
+                        line-height: 12px;
+                        transition: all 0.4s;
+                        i {
+                            font-size: 12px;
+                        }
+                        border: 1px solid #CCCCCC;
+                    }
+                }
+                .arrow {
+                    display: none
+                }
+            }
+            &>.ant-collapse-item-active {
+                .ant-collapse-header .collapse-panel-content-header .arrow-icon {
+                    transform: rotate(180deg);
+                    transform-origin: center center
+                }
+            }
+            .ant-collapse-item .ant-collapse-content {
+                border-top: none;
+                &>.ant-collapse-content-box {
+                    padding: 0 18px;
+                    .user-attribution-content {
+                        border-top: 1px dashed #D9D9D9;
+                        padding: 10px 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}

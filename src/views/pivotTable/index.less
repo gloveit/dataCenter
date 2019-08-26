@@ -1,0 +1,45 @@
+.data-perspective-table-wrap {
+    height: 100%;
+    width: 100%;
+    background: #F5F7FA;
+    padding-bottom: 20px;
+    overflow: hidden;
+    .table-page {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        padding: 0 calc(~'7%');
+        .title {
+            font-family: MicrosoftYaHei;
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #666666;
+        }
+        .content {
+            width: 100%;
+            min-height: 580px;
+            padding: 20px;
+            background: #FFF;
+            box-shadow: 0 2px 4px 0 rgba(128, 128, 128, 0.20);
+            .search {
+                height: 32px;
+                position: relative;
+                margin-bottom: 16px;
+                .ant-btn {
+                    padding: 0 8px;
+                    background: #1B5EC1
+                }
+                .search-export {
+                    color: #fff;
+                    position: absolute;
+                    right: 18px;
+                    top: 0;
+                }
+            }
+            .content-footer {
+                text-align: right;
+                padding: 10px 10px 0;
+            }
+        }
+    }
+}

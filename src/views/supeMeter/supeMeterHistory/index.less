@@ -1,0 +1,167 @@
+.supe-meter-history-page {
+    height: 100%;
+    width: 100%;
+    background: #F5F7FA;
+    padding-bottom: 20px;
+    overflow: hidden;
+    .supe-meter-box-page {
+        width: 100%;
+        height: 100%;
+        padding: 0 calc(~'7% + 8px');
+        .history-details-breadcrumb {
+            height: 40px;
+            .ant-breadcrumb {
+                font-size: 12px;
+                line-height: 40px;
+            }
+        }
+        .content {
+            height: calc(~'100% - 40px');
+            background: #FFFFFF;
+            box-shadow: 0 1px 4px 0 rgba(41, 46, 51, 0.10);
+            padding: 20px;
+            .meter-info {
+                font-family: MicrosoftYaHei;
+                font-size: 14px;
+                color: #666666;
+                margin-bottom: 10px;
+                i {
+                    color: #1B5EC1;
+                    margin-right: 10px;
+                }
+            }
+            .details-info-content {
+                height: 81px;
+                width: 100%;
+                border: 1px solid #e8e8e8;
+                background: #F5F7FA;
+                margin-bottom: 24px;
+                .info-row {
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    box-sizing: border-box;
+                    background: #FFFFFF;
+                    .label {
+                        width: 110px;
+                        line-height: 40px;
+                        text-align: right;
+                        padding-right: 20px;
+                        font-family: MicrosoftYaHei;
+                        font-size: 14px;
+                        color: #999999;
+                        background: #F5F7FA;
+                        border-bottom: 1px solid #f3f3f3
+                    }
+                    .input {
+                        flex: 1;
+                        line-height: 40px;
+                        text-align: left;
+                        padding-left: 20px;
+                        font-family: MicrosoftYaHei;
+                        font-size: 12px;
+                        border-bottom: 1px solid #f3f3f3;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        color: #666666;
+                    }
+                }
+                .info-row:nth-of-type(5) {
+                    .label {
+                        border-bottom: 1px solid #e8e8e8
+                    }
+                    .input {
+                        border-bottom: 1px solid #e8e8e8;
+                    }
+                }
+                .info-row:nth-of-type(6) {
+                    .label {
+                        border-bottom: 1px solid #e8e8e8
+                    }
+                    .input {
+                        border-bottom: 1px solid #e8e8e8;
+                    }
+                }
+            }
+            .history-details-title {
+                i {
+                    color: #1B5EC1;
+                    margin-right: 10px;
+                }
+            }
+            .history-details-table {
+                height: calc(~'100% - 210px');
+                .ant-table-wrapper {
+                    height: 100%;
+                    .ant-spin-nested-loading {
+                        height: 100%;
+                        .ant-spin-container {
+                            height: 100%;
+                            .ant-table {
+                                height: 100%;
+                                .ant-table-content {
+                                    height: 100%;
+                                    .ant-table-scroll {
+                                        height: 100%;
+                                        overflow: hidden;
+                                        .ant-table-body {
+                                            max-height: calc(~'100% - 70px')!important;
+                                            &::-webkit-scrollbar {
+                                                width: 7px;
+                                                height: 7px;
+                                            }
+                                            &::-webkit-scrollbar-thumb {
+                                                border-radius: 2.5px;
+                                                background: rgba(216, 216, 216, 0.8);
+                                            }
+                                        }
+                                        .ant-table-header {
+                                            margin-bottom: -24px!important;
+                                            padding-bottom: 16px!important;
+                                            &::-webkit-scrollbar {
+                                                width: 7px;
+                                                height: 7px;
+                                            }
+                                            &::-webkit-scrollbar-thumb {
+                                                border-radius: 2.5px;
+                                                background: rgba(216, 216, 216, 0.3);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .ant-dropdown .ant-dropdown-content .filter-drop-time {
+                    z-index: 999;
+                    cursor: pointer;
+                    padding: 5px;
+                    width: 285px;
+                    background: #fff;
+                    box-shadow: 0 1px 4px 0 rgba(41, 46, 51, 0.10);
+                    .drop-time-btn {
+                        width: 100%;
+                        border: none;
+                        list-style: none;
+                        outline: none;
+                        text-align: left
+                    }
+                    .custom-time {
+                        padding: 0 14px;
+                        span {
+                            display: inline-block;
+                            height: 30px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .content-footer {
+                    text-align: right;
+                    padding: 10px 10px 0;
+                }
+            }
+        }
+    }
+}
